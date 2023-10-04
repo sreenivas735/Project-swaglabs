@@ -29,10 +29,10 @@ public class Hooks {
         String appUrl = prop.getProperty("application_url");
 
         if (browser.equals("edge")) {
-            System.setProperty("webdriver.edge.driver", path + "/msedgedriver.exe");
+            System.setProperty("webdriver.edge.driver", path + "\\msedgedriver.exe");
             driver = new EdgeDriver();
         } else if (browser.equals("chrome")) {
-            System.setProperty("webdriver.edge.driver", path + "/chromedriver.exe");
+            System.setProperty("webdriver.edge.driver", path + "\\chromedriver.exe");
             driver = new ChromeDriver();
         } else {
 
