@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src\\test\\resources\\Swaglabs.feature",
+        features = "src/test/resources/Swaglabs.feature",
         glue = "Glue",
         tags = "@allScenarios",
         plugin = {"pretty", "html:target/Swaglabs-reports.html"},
