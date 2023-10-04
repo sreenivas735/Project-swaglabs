@@ -44,7 +44,7 @@ public class BaseclassORcommonmethods {
     public void Screenshot(String filename) throws IOException {
         TakesScreenshot screenshot = (TakesScreenshot) driver;
         File source = screenshot.getScreenshotAs(OutputType.FILE);
-        File dest = new File("target/screenshots/"+ filename);
+        File dest = new File("target/Screenshots/"+ filename);
         FileUtils.copyFile(source,dest);
     }
 
