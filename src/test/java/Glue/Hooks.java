@@ -29,10 +29,8 @@ public class Hooks {
         String appUrl = prop.getProperty("application_url");
 
         if (browser.equals("edge")) {
-           EdgeOptions edgeOptions = new EdgeOptions();
-           edgeOptions.setCapability("ms:edgeOptions", "--binary=/path/to/msedge");
             System.setProperty("webdriver.edge.driver", "/usr/local/bin/msedgedriver");
-            driver = new EdgeDriver(edgeOptions);
+            driver = new EdgeDriver();
         } else if (browser.equals("chrome")) {
             System.setProperty("webdriver.edge.driver", path + "/chromedriver.exe");
             driver = new ChromeDriver();
